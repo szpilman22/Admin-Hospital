@@ -1,5 +1,4 @@
 import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -15,9 +14,8 @@ const pagesRoutes: Routes = [
         ]
     },
 ];
-
-@NgModule({
-    imports: [RouterModule.forChild(pagesRoutes)],
-    exports: [RouterModule]
-})
-export class FeatureRoutingModule {}
+// @NgModule({
+//     imports: [RouterModule.forChild(pagesRoutes)],
+//     exports: [RouterModule]
+// })
+export const PAGES_ROUTES = RouterModule.forChild( pagesRoutes )

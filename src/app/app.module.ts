@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Rutas
-import { AppRoutingModule } from './app-routing.module';
+import { APP_ROUTES } from './app-routing.module';
+
+// Modulos
+import { PagesModule } from './pages/pages.module';
 
 // Componentes
 import { AppComponent } from './app.component';
-import { PagesModule } from './pages/pages.module';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 
@@ -19,7 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    APP_ROUTES,
     PagesModule
   ],
   providers: [],
